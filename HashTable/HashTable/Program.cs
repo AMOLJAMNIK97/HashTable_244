@@ -19,13 +19,16 @@ namespace HashTable
             hash.Add("3", "Not");
             hash.Add("4", "To");
             hash.Add("5", "be");
-            string hash5=hash.Get("5");
-            string hash2=hash.Get("2");
-            string hash4=hash.Get("4");
-            string hash3=hash.Get("3");
-            string hash1=hash.Get("1");
-            string hash0=hash.Get("0");
-             
+            string hash5 = hash.Get("5");
+            string hash2 = hash.Get("2");
+            string hash4 = hash.Get("4");
+            string hash3 = hash.Get("3");
+            string hash1 = hash.Get("1");
+            string hash0 = hash.Get("0");
+
+            hash.Remove("2");
+            string hashR = hash.Get("2");
+            Console.WriteLine(hashR);
              
             Console.WriteLine("5th index value: "+ hash5);
             Console.WriteLine("2th index value: "+ hash2);
@@ -33,7 +36,7 @@ namespace HashTable
             Console.WriteLine("3th index value: "+ hash3);
             Console.WriteLine("1th index value: "+ hash1);
             Console.WriteLine("0th index value: "+ hash0);
-
+           
         }
     }
 }
