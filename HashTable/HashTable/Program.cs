@@ -19,8 +19,8 @@ namespace HashTable
             hash.Add("3", "Not");
             hash.Add("4", "To");
             hash.Add("5", "be");
-            //string hash5=hash.Get("5");
-            Console.WriteLine(hash.Get("5"));
+            string hash5=hash.Get("5");
+            Console.WriteLine("5th index value: "+ hash5);
 
         }
     }
